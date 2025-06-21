@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: black;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navigation Bar + Burger */
+
+.header {
+    box-shadow: 0px 4px 21px -1px rgba(34, 60, 80, 0.13);
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: block;
+}
+
+.logo_img {
+    width: 60px;
+    height: 60px;    
+}
+
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_link {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+}
+
+@media (max-width: 992px) { 
+
+    .menu {
+        position: absolute;
+        left: -400px;
+        top: 0;
+        width: 350px;
+        background-color: black;
+        padding: 75px 20px 20px 20px;
+        transition: transform .5s;
+    }
+
+    .menu_list{
+        display: block;
+    }
+
+    .menu_link{
+        color: white;
+        font-size: 21px;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .header.open .menu{
+        transform: translateX(100%);
+    }
+}
+
+  
+  .containerr {
+    display: flex;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 200px;
+  }
+  
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    color: white;
+    background-color: #111;
+    border-right: 1px solid #333;
+  }
+  
+  .sidebar.right {
+    border-left: 1px solid #333;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .sidebar li {
+    margin: 5px 0;
+  }
+  
+  .sidebar .buttonss button {
+    margin-right: 5px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+    cursor: pointer;
+  }
+  
+  .sidebar .buttonss button:hover {
+    background-color: #333;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .main h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+  
+  .main .by {
+    font-size: 40   px;
+    font-weight: normal;
+    color: #aaa;
+  }
+  
+  .invoker-image {
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .modes button {
+    margin: 10px 0 5px;
+    padding: 8px 20px;
+    font-weight: bold;
+    background-color: #222;
+    border: 1px solid #555;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .modes button:hover {
+    background-color: #333;
+  }
+  
+  .modes p {
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 0.95em;
+  }
+  
+  .new {
+    color: orange;
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  
+  .spells span {
+    color: #66ccff;
+    font-weight: bold;
+  }
+
+  .spell-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+    margin: 15px 0;
+  }
+  #game-status {
+    font-size: 18px;
+    color: red;
+    margin-top: 10px;
+  }
+
+  #start-btn, #restart-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #start-btn:hover, #restart-btn:hover {
+    background: #666;
+  }
+  
+  #current-combo {
+    font-weight: bold;
+    color: #00ffff;
+  }
+       
+
+  /* Logo and Text */
+.logo1{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.text {
+    text-align: center;
+    color: white;
+    margin-top: 7%;
+    font-weight: 1000;
+    font-size: 45px;
+}
+
+.text_2 {
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.image {
+    display: flex;
+    box-sizing: border-box;
+    line-height: 23px;
+    justify-content: center;
+    padding: 10px 0;
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: auto;
+    margin-top: 1%;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    color: white;
+}
+
+
+/* sign in */
+
+.signin {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.Create_account {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #2e2f31;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.create_button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .create_button:hover {
+    background: #666;
+  }
+
+  .msg {
+    color: red;
+  }
+
+  .logout-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #d9534f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+.scoreboard {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.scoreboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.scoreboard th,
+.scoreboard td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.scoreboard th {
+  background-color: #333;
+  color: #fff;
+}
+
+.scoreboard tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
